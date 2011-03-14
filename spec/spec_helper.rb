@@ -17,7 +17,7 @@ Spork.prefork do
 end
 
 Spork.each_run do
-  wp2::Application.reload_routes!
+  WP2::Application.reload_routes!
 end
 
 Spork.each_run do

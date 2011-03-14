@@ -1,4 +1,4 @@
-wp2::Application.configure do
+WP2::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
   # The production environment is meant for finished, "live" apps.
@@ -48,7 +48,7 @@ wp2::Application.configure do
   config.active_support.deprecation = :notify
 
   config.middleware.use ExceptionNotifier,
-      :email_prefix => "[wp2] ",
+      :email_prefix => "[WP2] ",
       :sender_address => %{"notifier" <panter@mailantor.com>},
       :exception_recipients => %w(panter@mailinator.com)
 end
